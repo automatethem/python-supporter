@@ -1,7 +1,7 @@
 import pathlib
 import datetime
 import logging
-import cranberry.logging_lib
+from . import logging
 import os
 
 def cache_file_exists(cache_file, cache_minutes):    
