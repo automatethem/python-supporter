@@ -26,3 +26,13 @@ def basic_config(level=DEBUG, log_file="log.txt"):
         datefmt = '%Y-%m-%d %H:%M:%S',
         level = level
     )
+
+    def debug(message):
+        log.debug(message)
+    
+    def info(message):
+        log.info(message)
+        
+    def error(message):
+        log.error(message)
+                
