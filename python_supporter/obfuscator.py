@@ -40,7 +40,7 @@ if __name__ == "__main__":
     #level = logging.DEBUG
     #level = logging.INFO
     level = logging.ERROR
-    logging_lib.basic_config(level)
+    logging.basic_config(level)
 
     parser = argparse.ArgumentParser()
     parser.add_argument('--input')
