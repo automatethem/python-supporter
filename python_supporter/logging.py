@@ -1,9 +1,9 @@
 import logging as log
 import sys
 
-DEBUG = logging.DEBUG
-INFO = logging.INFO
-ERROR = logging.ERROR
+DEBUG = log.DEBUG
+INFO = log.INFO
+ERROR = log.ERROR
 
 '''
 level = python_supporter.logging.DEBUG
