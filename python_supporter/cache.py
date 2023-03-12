@@ -1,6 +1,5 @@
 import pathlib
 import datetime
-import logging
 from . import logging
 import os
 
@@ -27,6 +26,6 @@ if __name__ == "__main__":
     level = logging.DEBUG
     #level = logging.INFO
     #level = logging.ERROR
-    logging_lib.basic_config(level)
+    logging.basic_config(level)
     
     print(cache_file_exists("cache.json", 10))
