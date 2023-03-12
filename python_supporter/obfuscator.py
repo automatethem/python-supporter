@@ -5,7 +5,7 @@ import requests
 import urllib.parse
 import argparse 
 import json
-import logging 
+from . import logging
 from pathlib import Path
 import os
 
