@@ -15,7 +15,7 @@ def basic_config(level=DEBUG, log_file="log.txt"):
     for name in log.root.manager.loggerDict:
         logger = log.getLogger(name)
         #logger.disabled = True
-        logger.setLevel(logging.ERROR)
+        logger.setLevel(log.ERROR)
 
     log.basicConfig(
         handlers=[
