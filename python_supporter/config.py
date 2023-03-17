@@ -46,4 +46,4 @@ def save_json_text(file, json_text):
     #with open(file, "w", encoding='utf8') as f:
     #    f.write(json_text)
     config = json.loads(json_text)
-    save_config_dict(file, config)
+    save_config(file, config)
