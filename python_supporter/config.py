@@ -43,7 +43,7 @@ def save_config(file, config):
         json.dump(config, f, indent=4)
 
 def save_json_text(file, json_text):
-    #with open(file, "w", encoding='utf8') as f:
-    #    f.write(json_text)
-    config = json.loads(json_text)
-    save_config(file, config)
+    with open(file, "w", encoding='utf8') as f: #이렇게 저장해야 한글 제데로 나옴
+        f.write(json_text)
+    #config = json.loads(json_text)
+    #save_config(file, config)
