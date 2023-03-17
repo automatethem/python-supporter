@@ -17,5 +17,7 @@ def save_config_dict(file, dict):
         json.dump(dict, f, indent=4)
 
 def save_config_text(file, text):
-    with open(file, "w", encoding='utf8') as f:
-        f.write(text)
+    #with open(file, "w", encoding='utf8') as f:
+    #    f.write(text)
+    d = json.loads(text)
+    save_config_dict(file, d)
