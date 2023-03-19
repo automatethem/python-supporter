@@ -1,9 +1,9 @@
-import logging as log
+import logging as logging
 import sys
 
-DEBUG = log.DEBUG
-INFO = log.INFO
-ERROR = log.ERROR
+DEBUG = logging.DEBUG
+INFO = logging.INFO
+ERROR = logging.ERROR
 
 '''
 level = python_supporter.logging.DEBUG
@@ -12,15 +12,15 @@ level = python_supporter.logging.DEBUG
 python_supporter.logging.basic_config(level)
 '''
 def basic_config(level=DEBUG, log_file="log.txt"):
-    for name in log.root.manager.loggerDict:
-        logger = log.getLogger(name)
+    for name in logging.root.manager.loggerDict:
+        logger = logging.getLogger(name)
         #logger.disabled = True
-        logger.setLevel(log.ERROR)
+        logger.setLevel(logging.ERROR)
 
-    log.basicConfig(
+    logging.basicConfig(
         handlers=[
-            log.FileHandler(log_file, encoding="utf-8"),
-            log.StreamHandler(sys.stdout)
+            logging.FileHandler(log_file, encoding="utf-8"),
+            logging.StreamHandler(sys.stdout)
         ],
         format = '%(asctime)s: %(levelname)s: %(message)s',
         datefmt = '%Y-%m-%d %H:%M:%S',
@@ -28,10 +28,10 @@ def basic_config(level=DEBUG, log_file="log.txt"):
     )
 
 def debug(message):
-    log.debug(message)
+    logging.debug(message)
 
 def info(message):
-    log.info(message)
+    logging.info(message)
 
 def error(message):
-    log.error(message)
+    logging.error(message)
