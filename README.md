@@ -15,7 +15,7 @@ logging.basicConfig(logging.DEBUG)
 #logging.basicConfig(logging.INFO, filename='log.txt')
 #logging.basicConfig(logging.DEBUG, filename='log.txt')
 
-logging.error('This is error message') #2023-03-19 22:36:47: DEBUG: This is debug message
+logging.error('This is error message') #2023-03-19 22:36:47: ERROR: This is error message
 logging.info('This is info message') #2023-03-19 22:36:47: INFO: This is info message
-logging.debug('This is debug message') #2023-03-19 22:36:47: ERROR: This is error message
+logging.debug('This is debug message') #2023-03-19 22:36:47: DEBUG: This is debug message
 ```
