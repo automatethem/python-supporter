@@ -1,4 +1,4 @@
-import logging as logging
+import logging
 import sys
 
 DEBUG = logging.DEBUG
