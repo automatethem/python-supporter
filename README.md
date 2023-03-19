@@ -15,6 +15,6 @@ python_supporter.logging.basicConfig(python_supporter.logging.DEBUG)
 #python_supporter.logging.basicConfig(python_supporter.logging.INFO, filename='log.txt')
 #python_supporter.logging.basicConfig(python_supporter.logging.DEBUG, filename='log.txt')
 
-python_supporter.logging.error('This is error message') #
-python_supporter.logging.info('This is info message') #
-python_supporter.logging.debug('This is debug message') #
+python_supporter.logging.error('This is error message') #2023-03-19 22:36:47: DEBUG: This is debug message
+python_supporter.logging.info('This is info message') #2023-03-19 22:36:47: INFO: This is info message
+python_supporter.logging.debug('This is debug message') #2023-03-19 22:36:47: ERROR: This is error message
