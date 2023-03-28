@@ -52,7 +52,7 @@ def save_json_text(file, json_text):
 
 def save_config(file, config):
     with open(file, "w", encoding='utf8') as f:
-        json.dump(config, f, indent=4, ensure_ascii=False)
+        json.dump(config, f, indent=4, ensure_ascii=False) #ensure_ascii=False 해줘야 한글이 \uac1c\ubc1c 이 아닌 개발로 정상적으로 표현
 
 def save_json_text(file, json_text):
     #with open(file, "w", encoding='utf8') as f: #이렇게 저장해야 한글 제데로 나옴
