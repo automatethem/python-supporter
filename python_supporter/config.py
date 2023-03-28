@@ -38,6 +38,7 @@ def load_config_from_json_text(json_text):
     config = json.loads(json_text)
     return config
 
+'''
 def save_config(file, config):
     with open(file, "w", encoding='utf8') as f:
         json.dump(config, f, indent=4)
@@ -47,3 +48,14 @@ def save_json_text(file, json_text):
         f.write(json_text)
     #config = json.loads(json_text)
     #save_config(file, config)
+'''
+
+def save_config(file, config):
+    with open(file, "w", encoding='utf8') as f:
+        json.dump(config, f, indent=4, ensure_ascii=False)
+
+def save_json_text(file, json_text):
+    #with open(file, "w", encoding='utf8') as f: #이렇게 저장해야 한글 제데로 나옴
+    #    f.write(json_text)
+    config = json.loads(json_text)
+    save_config(file, config)
