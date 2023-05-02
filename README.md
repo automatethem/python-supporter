@@ -23,6 +23,6 @@ logging.debug('This is debug message')
 ```
 import python_supporter
 
-text = python_supporter.read_file(file)
-python_supporter.write_file(file, text)
+text = python_supporter.file.read_file(file)
+python_supporter.file.write_file(file, text)
 ```
