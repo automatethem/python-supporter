@@ -19,3 +19,10 @@ logging.error('This is error message') #2023-03-19 22:36:47: ERROR: This is erro
 logging.info('This is info message')
 logging.debug('This is debug message')
 ```
+
+```
+import python_supporter
+
+text = python_supporter.read_file(file)
+python_supporter.write_file(file, text)
+```
