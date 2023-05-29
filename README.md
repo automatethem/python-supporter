@@ -30,7 +30,7 @@ python_supporter.file.write_file(file, text)
 ```
 import python_supporter
 
-chrome_debugger_address = chrome["debugger_address"] #127.0.0.1:1001
+chrome_debugger_address = "127.0.0.1:1001"
 li = chrome_debugger_address.split(":")
 remote_debugging_port = int(li[1])
 remote_debugging_address = li[0]
