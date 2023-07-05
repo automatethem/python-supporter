@@ -45,7 +45,7 @@ import os
 import time
 from python_supporter.change_ip import ChangeIp
 
-base_directory = os.path.dirname(__file__) + "/change_ip"
+base_directory = os.path.dirname(__file__) + "/platform-tools"
 change_ip = ChangeIp(base_directory)
 
 device = change_ip.connect_to_device()
