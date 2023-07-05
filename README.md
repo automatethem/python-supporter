@@ -56,16 +56,15 @@ if not device:
 
 print(f"연결된 디바이스: {device}")
 
-change_ip.data_disable()
 print("모바일 데이터 해제")
+change_ip.data_disable()
 
-time.sleep(1)
 print("1초 쉬기")
+time.sleep(1)
 
-change_ip.data_enable()
 print("모바일 데이터 연결")
+change_ip.data_enable()
 
 ip = change_ip.check_ip()
-
 print(f"PC IP: {ip}")
 ```
