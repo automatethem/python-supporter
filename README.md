@@ -54,7 +54,7 @@ if not device:
     print(f"USB에 디바이스가 연결되지 않았습니다.")
     exit()
 
-print(f"연결된 디바이스: {change_ip.device}")
+print(f"연결된 디바이스: {device}")
 
 change_ip.data_disable()
 print("모바일 데이터 해제")
