@@ -7,7 +7,7 @@ def requirements():
 
 setuptools.setup(
 	name='python-supporter',
-	version='0.0.11',
+	version='0.0.12',
 	description='Python supporter',
 	long_description=open('README.md').read(),
 	long_description_content_type='text/markdown',
