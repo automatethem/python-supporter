@@ -5,5 +5,4 @@ from . import logging
 from . import obfuscator
 from . import random
 from . import socket
-from . import change_ip
 from . import check_ip
