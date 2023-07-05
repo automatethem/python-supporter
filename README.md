@@ -44,8 +44,7 @@ port_opened = python_supporter.socket.check_port_open(remote_debugging_address, 
 import os
 import time
 
-base_directory = os.path.dirname(__file__) + "/.."
-base_directory = os.path.abspath(base_directory)    
+base_directory = os.path.dirname(__file__) + "/change_ip"
 change_ip = ChangeIp(base_directory)
 
 device = change_ip.connect_to_device()
