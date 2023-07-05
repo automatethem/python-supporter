@@ -39,3 +39,33 @@ remote_debugging_address = li[0]
 
 port_opened = python_supporter.socket.check_port_open(remote_debugging_address, remote_debugging_port)
 ```
+
+```
+import os
+import time
+
+base_directory = os.path.dirname(__file__) + "/.."
+base_directory = os.path.abspath(base_directory)    
+change_ip = ChangeIp(base_directory)
+
+device = change_ip.connect_to_device()
+    
+if not device:
+    print(f"USB에 디바이스가 연결되지 않았습니다.")
+    exit()
+
+print(f"연결된 디바이스: {change_ip.device}")
+
+change_ip.data_disable()
+print("모바일 데이터 해제")
+
+time.sleep(1)
+print("1초 쉬기")
+
+change_ip.data_enable()
+print("모바일 데이터 연결")
+
+ip = change_ip.check_ip()
+
+print(f"PC IP: {ip}")
+```
