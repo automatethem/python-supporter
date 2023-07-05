@@ -44,6 +44,10 @@ class ChangeIp:
         cmd = f"{self.base_directory}/platform-tools/adb -s {self.device} shell svc data enable"
         os.system(cmd)
 
+
+
+
+    
     def check_ip(self):    
         cmd = "nslookup"
         outputs = subprocess.check_output([cmd, "myip.opendns.com", "resolver1.opendns.com"]).decode("cp949")
